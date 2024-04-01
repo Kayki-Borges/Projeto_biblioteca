@@ -45,9 +45,76 @@
                 </ul><!--nav-links-->
             </div><!--meni-items-->
         </nav>
-        <section class="dashboard">
-            <div class="bi bi-list sidebar-"
-        </section>
+        <section class="Dashboard">
+            <div class="top">
+                <i class="bi bi-list sidebartoggle2"></i>
+                <div class="logo-name">
+                    <h1 class="seduc-logo">Biblioteca PBL</h1>
+                </div>
+                <div class="actionimg">
+                   <div class="profile" onclick="menutoggle();">
+                       <img src="IMG/avatar5.png">
+                    </div>
+                <div class="menu">
+                    <h3>
+                        Antônio Carlos
+                    </h3>
+                    <ul>
+                        <li>
+                            <span class="material-icons icons-size"><i class="bi bi-person"></i></span>
+                            <a href="#">Perfil</a>
+                        </li>
+                        <li>
+                            <span class="material-icons icons-size"><i class="bi bi-question-circle"></i></span>
+                            <a href="#">Ajuda</a>
+                        </li>
+                        <li>
+                            <span class="material-icons icons-size"><i class="bi bi-gear"></i></span>
+                            <a href="#">Configurações</a>
+                        </li>
+                        <li>
+                            <span class="material-icons icons-size"><i class="bi bi-box-arrow-right"></i></span>
+                            <a href="index.html">Saida</a>
+                        </li>
+                     </ul>
+                </div><!--menu-->
+                </div><!--actionimg-->
+            </div><!--top-->
+            <div class="corpo-da-pag">
+                <div class="scroll">
+                    <div class="activity">
+                        <div class="overview">
+                            <div class="title">
+                                <i class="bi bi-person-rolodex"></i>
+                                 <span class="text">Alunos</span>
+                            </div><!--Title-->
+                            <div class="wdaSever" style=" white-space: nowrap;">
+                            <li class="bradcrumb-item"><a style="text-decoration: nome !important; color: black; font-size: 12px; margin-left: 2%;" href="Dashboard.html">Biblioteca PBL</a></li>
+                            
+                        <li class="bradcrumb-item"><a href="Funcionarios.html" style="text-decoration: nome !important; color: black; font-size: 12px; margin-left: 2%;">&nbsp; Funcionarios</a></li>
+                    </div>
+                        </div><!--Overview-->
+                        <div id="lupa-grid">
+                            <button type="button" class="button blue mobiel" id="cadastrarFuncionario">Cadastrar Novo Funcionario</button>
+                        </div>
+                        <br>
+    
+                        <table id="tableFuncionario" class="records">
+                            <thead>
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>Matricula</th>
+                                    <th>CPF</th>
+                                    <th>Função</th>
+                                    <th>Celular</th>
+                                    <th>E-mail</th>
+                                    <th>Ação</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+    
+                            </tbody>
+                        </table>
     </div>
 </body>
 </html>
