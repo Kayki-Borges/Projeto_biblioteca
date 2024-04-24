@@ -4,7 +4,42 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
     font-weight: normal;
     font-style: normal;
+}
+
+/* A regra para fazer o corpo da Pagina*/
+body{
+    width: 100%;
+    height: 100%;
+    background: whitesmoke;
+    overflow: hidden;
+}
+
+/* A regra para a div container no HTML5*/
+.container{
+    max-width: 440px;
+    padding: 0 20px;
+    margin: 170px auto;
+}
+
+/*Essa regra cria uma caixa que marcará a tela de login*/
+.wrapper{
+    width: 400px;
+    height: 340px;
+    background: aliceblue;
+    border-radius: 7px;
+    box-shadow: 0 10px 4px -4px rgba(0, 0, 0, 0.25);
+}
+
+/* Essa regra cria uma faixa na parte superior da caixa,*/
+.wrapper .title{
+    line-height: 80px;
+    background: green;
+    padding-left: 20px;
+    border-radius: 7px 7px 0 0;
+    font-size: 25px;
+    color: whitesmoke;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
