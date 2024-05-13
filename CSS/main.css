@@ -144,6 +144,49 @@ nav.close li a .link-name{
 
 .close .menu-sid{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
-/*-----------FIM NAV------------*/
 
+.menu-sid{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    padding: 12px;
+}
+
+.sidebar-toggle{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    padding: 6px;
+}
+
+.sidebar-toggle2{
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    padding: 6px;
+    display: none;
+}
+
+
+/*perfil*/
+
+.icons-size{
+    color: #555;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.actionimg{
+    right: 30px;
+    display: flex;
+    object-fit: cover;
+}
+
+.actionimg .profile{
+    border-radius: 50%;
+}
