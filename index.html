@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/login.css">
     <link rel="icon" href="img/livro.ico" />
-     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Biblioteca Escolar PBL- Login</title>
 </head>
 <body>
@@ -17,16 +17,16 @@
         </div>
         <form action="Dashboard.html">
             <div class="row">
-                <div class="i"><i class="fa-solid fa-user" style="color: white;"></i></div>
+                <div class="i"><i class="bi bi-person" style="color: #fff;"></i></div>
                 <input type="text" placeholder="E-mail" id="email" required>
             </div>
             <div class="row">
-                <div class="i"><i class="fa-solid fa-lock" style="color: white;"></i></div>
+                <div class="i"><i class="bi bi-lock-fill" style="color: #fff;"></i></i></div>
                 <input type="password" placeholder="Senha" id="senha" required>
             </div>
-                     <div class="row buttob">
+                     <div class="row button">
                 <div class="pass"><p>Esqueceu a Senha?</p></div>
-                <input type="submit" value="Login" onclick="logar(); return false">
+                <input type="submit" value="Login" class="butt" onclick="logar(); return false">
             </div>
         </form>  
     </div>

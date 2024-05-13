@@ -74,7 +74,7 @@ bordas entre outros*/
     position: absolute;
     width: 47px;
     height: 100%;
-    font-size: 20px;
+    font-size: 35px;
     background: green;
     box-shadow: 0 4px 2px -2px rgba(0,0,0,0.25);
     border-radius: 5px 0 0 5px;
@@ -82,6 +82,11 @@ bordas entre outros*/
     align-items: center;
     justify-content: center;
 }
+
+.wrapper form .row .i .bi-lock-fill{
+    cursor: pointer;
+}
+
 .wrapper form .pass{
     margin: -8px 0 20px 0;
 }
@@ -96,14 +101,20 @@ bordas entre outros*/
     text-decoration: underline;
 }
 
-
 /* Essa regra trabalha as configurações do botão de login*/
 .wrapper form .button input{
     color: white;
     font-size: 18px;
-    font-weight: 500;
     padding-left: 0;
-    background: gray;
+    background: green;
     border: 1px solid lightgray;
     cursor: pointer;
+    transition: .2s ease;
+}
+
+.wrapper form .button input:hover{
+    color: green;
+    background-color: #fff;
+    border: 1px solid green;
+    transform: scale(1.01);
 }
