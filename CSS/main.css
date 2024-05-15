@@ -1,68 +1,66 @@
-/*Essa regra serve para importar fontes, neste caso eke busca URL informado*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*Essa regra serve para importar fontes, neste caso ele busca URL informado*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-/* A regra afetará todos os elementos HTML da pagina
-ele dará elfeito aos elementos da pagina*/
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    margin: 0%;
     text-decoration: none;
     list-style: none;
     border: none;
     user-select: none;
 }
 
-/* A regra afetará o corpo da página*/
+
 /*MENU*/
-body{
+body {
     min-height: 100vh;
     background-color: #0E4BF1;
 }
 
-/* Nav criará efeito para o menu lateral*/
-nav{
+nav {
     top: 0;
     left: 0;
     height: 100vh;
     width: 250px;
     background-image: linear-gradient(to bottom right, #2C383D, #181E22) !important;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
     overflow: auto;
 }
 
-nav.close{
+nav.close {
     width: 73px;
 }
 
-nav .div_logo_name{
+nav .div-logo-name {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
     white-space: nowrap;
     overflow: hidden;
 }
 
-nav .logo_name{
+nav .logo_name {
     font-size: 29px;
     font-weight: 600;
     color: #00aaff;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
 }
 
-nav.close .logo_name{
+nav.close .logo_name {
     opacity: 0;
     pointer-events: none;
 }
 
-.div_logo_name{
+.div-logo-name {
     width: 100%;
     padding-top: 30px;
 }
 
-nav .menu-items{
+nav .menu-items {
     margin-top: 0px;
     display: flex;
     flex-direction: column;
@@ -70,7 +68,7 @@ nav .menu-items{
     padding-top: 25px;
 }
 
-.menu-items li{
+.menu-items li {
     background-color: transparent;
     border-bottom: 1px solid #1A2326;
     height: 40px;
@@ -79,11 +77,11 @@ nav .menu-items{
     align-items: center;
 }
 
-.close .menu-items li a{
+.close .menu-items li a {
     justify-content: center;
 }
 
-.menu-items li a{
+.menu-items li a {
     display: flex;
     align-items: center;
     height: 50px;
@@ -92,14 +90,14 @@ nav .menu-items{
     position: relative;
 }
 
-.nav-links li:hover{
+.nav-links li:hover {
     border-left: 3px solid #00aaff;
     font-weight: bold;
-    background-image: linear-gradient(to right, #181E22,#181E22, #2c383D) !important;
+    background-image: linear-gradient(to right, #181E22, #181E22, #2C383D) !important;
     background: transparent;
 }
 
-.button-menu{
+.button-menu {
     overflow: none;
     white-space: nowrap;
     cursor: pointer;
@@ -109,84 +107,127 @@ nav .menu-items{
     border-bottom: 1px solid #1A2326;
     height: 40px;
     text-decoration: none;
-    color: #fff;
+    color: white;
     text-align: left;
     width: 100%;
     line-height: 37px;
 }
 
-.menu-items li a i{
+.menu-items li a i {
     font-size: 18px;
     min-width: 45px;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: #ffffff;
 }
 
-.menu-items li a .link-name{
+.menu-items li a .link-name {
     font-size: 16px;
     font-weight: 400;
-    color: #fff;
-    transition: all .5s ease;
+    color: #ffffff;
+    transition: all 0.5s ease;
 }
 
-nav.close li a .link-name{
+nav.close li a .link-name {
     display: none;
 }
 
-.menu-items .mode{
+.menu-items .mode {
     display: flex;
     align-items: center;
     white-space: nowrap;
 }
 
-.close .menu-sid{
+.close .menu-sid {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.menu-sid{
+.menu-sid {
     width: 100%;
     display: flex;
     justify-content: left;
     padding: 12px;
 }
 
-.sidebar-toggle{
+.sidebar-toggle {
     font-size: 30px;
     font-weight: bold;
-    color: #fff;
+    color: #ffffff;
     cursor: pointer;
-    padding: 6px;
+    padding: 6PX;
 }
 
-.sidebar-toggle2{
+.sidebar-toggle2 {
     font-size: 30px;
     font-weight: bold;
-    color: #333;
+    color: #000000;
     cursor: pointer;
-    padding: 6px;
+    padding: 6PX;
     display: none;
 }
 
 
 /*perfil*/
 
-.icons-size{
+.icons-size {
     color: #555;
     font-size: 22px;
     font-weight: 600;
 }
 
-.actionimg{
+.actionimg {
     right: 30px;
     display: flex;
     object-fit: cover;
 }
 
-.actionimg .profile{
+.actionimg .profile {
     border-radius: 50%;
+    cursor: pointer;
+    height: 36px;
+    overflow: hidden;
+    width: 36px;
+}
+
+.actionimg .profile img {
+    width: 100%;
+    top: 0;
+    object-fit: cover;
+    left: 0;
+    height: 100%;
+}
+
+.actionimg .menu {
+    background-color: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 10px 20px;
+    position: absolute;
+    right: 10px;
+    width: 200px;
+    transition: 0.5s;
+    top: 120px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.actionimg .menu.active {
+    opacity: 1;
+    top: 60px;
+    visibility: visible;
+}
+
+.actionimg .menu::before {
+    background-color: #ffffff;
+    content: '';
+    height: 20px;
+    position: absolute;
+    right: 14px;
+    transform: rotate(45deg);
+    top: -5px;
+    width: 20px;
 }
