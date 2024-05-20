@@ -254,3 +254,20 @@ nav.close li a .link-name {
     cursor: pointer;
 }
 
+.actionimg .menu ul li img{
+    max-width: 20px;
+    margin-right: 10px;
+    opacity: .5;
+    transition: .5s;
+}
+
+.actionimg .menu ul li a{
+    display: inline-block;
+    color: #707070;
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
