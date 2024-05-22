@@ -321,3 +321,35 @@ nav.close li a .link-name {
     transition: all .3s ease;
 }
 
+::-webkit-scrollbar-thumb:hover{
+    background: #0b3cc1;
+}
+
+.top{
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 14px;
+    background-color: rgb(255,255,255);
+    transition: all .5s ease;
+    z-index: 10;
+}
+
+.scroll::-webkit-scrollbar{
+    width: 5px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.scroll::-webkit-scrollbar-thumb{
+    background-color: #0E4BF1;
+    border-radius: 6px;
+}
+
+.corpo-da-pag{
+    padding: 20px;
+    width: 100%;
+    height: calc(100% - 50px);
+}
